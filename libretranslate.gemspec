@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["Sébastien Gaya"]
   spec.email = ["sebastien.gaya@gmail.com"]
 
-  spec.summary = "Ruby gem to communicate with LibreTranslate API."
-  spec.description = "Ruby gem to communicate with LibreTranslate API."
+  spec.summary = "Ruby wrapper to communicate with LibreTranslate API."
+  spec.description = "Ruby wrapper to communicate with LibreTranslate API."
   spec.homepage = "https://github.com/noesya/libretranslate"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
