@@ -12,9 +12,24 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install libretranslate
 
+If you're working on a Ruby on Rails application, generate the initializer to set your configuration:
+
+    $ rails generate libretranslate:install
+
+Else, add the following in your code and modify it to your configuration:
+
+```rb
+require "libretranslate"
+
+LibreTranslate.configure do |config|
+  config.base_url = "https://libretranslate.com"
+  config.api_key = ""
+end
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+TODO
 
 ## Development
 

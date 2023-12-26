@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/libretranslate/version"
+require_relative "lib/libre_translate/version"
 
 Gem::Specification.new do |spec|
   spec.name = "libretranslate"
-  spec.version = Libretranslate::VERSION
+  spec.version = LibreTranslate::VERSION
   spec.authors = ["Sébastien Gaya"]
   spec.email = ["sebastien.gaya@gmail.com"]
 
