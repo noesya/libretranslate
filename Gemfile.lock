@@ -2,16 +2,33 @@ PATH
   remote: .
   specs:
     libretranslate (0.1.0)
+      json
+      net-http
+      open-uri
 
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (11.1.3)
+    date (3.3.4)
+    json (2.7.1)
+    net-http (0.4.0)
+      uri
+    open-uri (0.4.1)
+      stringio
+      time
+      uri
     rake (13.1.0)
+    stringio (3.1.0)
+    time (0.3.0)
+      date
+    uri (0.13.0)
 
 PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  byebug
   libretranslate!
   rake (~> 13.0)
 

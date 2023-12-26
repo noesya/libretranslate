@@ -30,6 +30,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency "json"
+  spec.add_dependency "net-http"
+  spec.add_dependency "open-uri"
+
+  spec.add_development_dependency "byebug"
 end

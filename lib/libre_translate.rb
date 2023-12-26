@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+require "json"
+require "net/http"
+require "open-uri"
+
+require_relative "libre_translate/api"
 require_relative "libre_translate/version"
 
 module LibreTranslate
@@ -15,6 +20,36 @@ module LibreTranslate
     def api_key
       @api_key ||= ""
     end
+  end
+
+  def self.languages
+    Api.get("/languages")
+  end
+
+  def self.frontend_settings
+    Api.get("/frontend/settings")
+  end
+
+  def self.detect(text)
+    Api.post("/detect", { q: text })
+  end
+
+  def self.translate(text, source:, target:, format: "text")
+    Api.post("/translate", {
+      q: text,
+      source: source,
+      target: target,
+      format: format
+    })
+  end
+
+  def self.suggest(text, translation, source:, target:)
+    Api.post("/suggest", {
+      q: text,
+      s: translation,
+      source: source,
+      target: target
+    })
   end
 
   def self.configure
