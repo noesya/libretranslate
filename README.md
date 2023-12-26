@@ -1,6 +1,6 @@
 # LibreTranslate
 
-Ruby gem to communicate with LibreTranslate API.
+Ruby wrapper to communicate with [LibreTranslate](https://libretranslate.com) API.
 
 ## Installation
 
@@ -29,7 +29,34 @@ end
 
 ## Usage
 
-TODO
+### Detect the language of a single text
+
+```rb
+LibreTranslate.detect("Hello world!")
+```
+
+### Translate text from one language to another
+
+```rb
+# With source and target languages
+LibreTranslate.translate("Hello world!", source: "en", target: "fr")
+# With source detection
+LibreTranslate.translate("Hello world!", source: "auto", target: "fr")
+# With HTML
+LibreTranslate.translate("Hello <b>world</b>!", source: "en", target: "fr", format: "html")
+```
+
+### Recover the list of supported languages
+
+```rb
+LibreTranslate.languages
+```
+
+### Recover interface-specific settings
+
+```rb
+LibreTranslate.frontend_settings
+```
 
 ## Development
 
