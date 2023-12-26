@@ -1,5 +1,7 @@
 # LibreTranslate
 
+[![Gem Version](https://badge.fury.io/rb/libretranslate.svg)](https://badge.fury.io/rb/libretranslate)
+
 Ruby wrapper to communicate with [LibreTranslate](https://libretranslate.com) API.
 
 ## Installation
