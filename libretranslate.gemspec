@@ -5,8 +5,8 @@ require_relative "lib/libre_translate/version"
 Gem::Specification.new do |spec|
   spec.name = "libretranslate"
   spec.version = LibreTranslate::VERSION
-  spec.authors = ["Sébastien Gaya"]
-  spec.email = ["sebastien.gaya@gmail.com"]
+  spec.authors = ["Sébastien Gaya", "Arnaud Levy"]
+  spec.email = ["sebastien.gaya@gmail.com", "arnaud.levy@noesya.coop"]
 
   spec.summary = "Ruby wrapper to communicate with LibreTranslate API."
   spec.description = "Ruby wrapper to communicate with LibreTranslate API."
